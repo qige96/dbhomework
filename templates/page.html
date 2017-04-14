@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{margin: 300px 300px}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <form action="/{{types}}" method="post">
+            <p>stu_id: </p><input type="text" name="stu_id">
+            {% if types != "select" and types != "delete" %}
+                <P>name:</P><input type="text" name="name">
+                <p>dept_name:</p><input type="text" name="dept_name">
+                <p>tot_cred:</p><input type="text" name="tot_cred">
+            {% end %}
+            <input type="submit">
+
+        </form>
+    </div>
+</body>
+</html>
