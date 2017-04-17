@@ -7,7 +7,16 @@
 ```
 pip install tornado
 ```
-此外还需要信件mysql数据库，并运行项目中的`Create_tables.sql`和`insert_datas.sql`来建表和插入数据
+在python中操作数据库，需要安装数据库驱动：
+```
+pip install pymysql
+```
+
+此外还需要新建mysql数据库:
+```sql
+mysql>create database university;
+```
+并运行项目中的`Create_tables.sql`和`insert_datas.sql`来建表和插入数据
 
 运行时只需在命令行进入项目文件夹，输入：
 ```
