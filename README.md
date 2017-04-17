@@ -16,7 +16,12 @@ pip install pymysql
 ```sql
 mysql>create database university;
 ```
-并运行项目中的`Create_tables.sql`和`insert_datas.sql`来建表和插入数据
+并运行项目中的`Create_tables.sql`和`insert_datas.sql`（注意文件路径）来建表和插入数据
+```
+mysql>source Create_tables.sql
+mysql>source insert_datas.sql
+```
+
 
 运行时只需在命令行进入项目文件夹，输入：
 ```
